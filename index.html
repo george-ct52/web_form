@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="signup">
+      <div class="form">
+        <h1>Signup</h1>
+        <form id="signupForm">
+          <input type="text" id="name" placeholder="Name" required/>
+          <input type="email" id="email" placeholder="Email Address" required/>
+          <input type="password" id="password" placeholder="Password" required/>
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+            required
+          />
+          <input type="tel" id="phoneNumber" placeholder="Phone Number" required/>
+          <label> By signing up, you agree to our <a href="">Terms</a>, </label>
+          <label>
+            <a href="">Privacy Policy</a> and <a href="">Cookies Policy</a>
+          </label>
+          <button type="submit">Sign Up</button>
+          <label class="error" id="errorMessage"></label>
+          <div>
+            <label>Already have an account?</label>
+            <a href="#"> Log In</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
